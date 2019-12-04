@@ -1,4 +1,4 @@
-﻿using ConstructorInjection = DependencyInjection.ConstructorInjection;
+using ConstructorInjection = DependencyInjection.ConstructorInjection;
 using MethodInjection = DependencyInjection.MethodInjection;
 using PropertyInjection = DependencyInjection.PropertyInjection;
 using System;
@@ -12,18 +12,30 @@ namespace DependencyInjection
 
             //DependencyInjection with Constructor Injection Technique 
             var service = new ConstructorInjection.InjectorService();
-            var autor = service.GetActorById(1);
-            var autors = service.GetActors();
-
+            var actor = service.GetActorById(1);
+            var actors = service.GetActors();
+            foreach (var a in actors)
+            {
+                Console.WriteLine(a.ToString());
+            }
+            Console.WriteLine("----------------------------------------------");
             //DependencyInjection with Method Injection Technique 
             var methodInjectionService = new MethodInjection.InjectorService();
-            autor = methodInjectionService.GetActorById(1);
-            autors = methodInjectionService.GetActors();
-            
+            actor = methodInjectionService.GetActorById(1);
+            actors = methodInjectionService.GetActors();
+            foreach (var a in actors)
+            {
+                Console.WriteLine(a.ToString());
+            }
+            Console.WriteLine("----------------------------------------------");
             //DependencyInjection with Property Injection Technique
             var propertyInjectionService = new PropertyInjection.InjectorService();
-            autor = propertyInjectionService.GetActorById(1);
-            autors = propertyInjectionService.GetActors();
+            actor = propertyInjectionService.GetActorById(1);
+            actors = propertyInjectionService.GetActors();
+            foreach (var a in actors)
+            {
+                Console.WriteLine(a.ToString());
+            }
         }
     }
 }
