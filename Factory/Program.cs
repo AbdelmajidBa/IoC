@@ -8,8 +8,12 @@ namespace Factory
         {
 
             var bl = new BusinessLogicLayer();
-            var autor = bl.GetActorById(1);
-            var autors = bl.GetActors();
+            var actor = bl.GetActorById(1);
+            var actors = bl.GetActors();
+            foreach (var a in actors)
+            {
+                Console.WriteLine(a.ToString());
+            }
 
         }
     }
