@@ -3,7 +3,7 @@
 In this project, there are sample examples to explain different ways to implement Inversion of Control Principle in order to 
 achieve loose coupling between application classes. 
 
-* IoC using Factory
+* [IoC using Factory](./Factory)
 * IoC using Dependency Injection (DI)
 * IoC using Dependency Inversion Principle (DIP)
 * IoC using Unity Container
