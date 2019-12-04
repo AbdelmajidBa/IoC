@@ -1,4 +1,4 @@
-﻿
+
 using DependencyInjection.Model;
 using System;
 using System.Collections.Generic;
@@ -25,7 +25,7 @@ namespace DependencyInjection
                         new Actor { ID=9, FirstName="JOE", LastName="SWANK" }};
         }
 
-        public IEnumerable<Actor> GetAllActors()
+        public IEnumerable<Actor> GetActors()
         {
             return customes;
         }
