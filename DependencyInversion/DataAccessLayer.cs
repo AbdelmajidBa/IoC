@@ -1,4 +1,4 @@
-﻿using DependencyInversion;
+using DependencyInversion;
 using DependencyInversion.Model;
 using System;
 using System.Collections.Generic;
@@ -7,10 +7,10 @@ using System.Text;
 
 namespace DependencyInversion
 {
-    public class DataAccess : IDataAccess
+    public class DataAccessLayer : IDataAccess
     {
         private List<Actor> customes;
-        public DataAccess()
+        public DataAccessLayer()
         {
             customes = new List<Actor> {
                         new Actor { ID=1, FirstName="PENELOPE", LastName="GUINESS" },
