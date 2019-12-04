@@ -1,14 +1,14 @@
-﻿using DependencyInversion.Model;
+using DependencyInversion.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DependencyInversion
 {
-    public class BusinessLogic
+    public class BusinessLogicLayer
     {
         IDataAccess _dataAccess;
-        public BusinessLogic()
+        public BusinessLogicLayer()
         {
             _dataAccess = DataAccessFactory.GetDataAccessObj();
         }
