@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Unity.Container.Model;
 
 namespace Unity.Container
 {
-    public class BusinessLogic
+    public class BusinessLogicLayer
     {
         IDataAccess _dataAccess;
-        public BusinessLogic(IDataAccess _custDataAccess)
+        public BusinessLogicLayer(IDataAccess _custDataAccess)
         {
             _dataAccess = _custDataAccess;
         }
