@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +6,10 @@ using Unity.Container.Model;
 
 namespace Unity.Container
 {
-    class DataAccess : IDataAccess
+    class DataAccessLayer : IDataAccess
     {
         private List<Actor> customes;
-        public DataAccess()
+        public DataAccessLayer()
         {
             customes = new List<Actor> {
                         new Actor { ID=1, FirstName="PENELOPE", LastName="GUINESS" },
