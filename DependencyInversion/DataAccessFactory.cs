@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,7 +8,7 @@ namespace DependencyInversion
     {
         public static IDataAccess GetDataAccessObj()
         {
-            return new DataAccess();
+            return new DataAccessLayer();
         }
     }
 }
