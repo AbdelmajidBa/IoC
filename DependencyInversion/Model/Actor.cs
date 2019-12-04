@@ -13,6 +13,12 @@ namespace DependencyInversion.Model
         public string LastName { get; set; }
 
         public DateTime? LastUpdate { get; set; }
+        
+        public override string ToString()
+        {
+            var actorStr = $"Actor : id={ID},   firstName={FirstName},  lastName={LastName}";
+            return "{" + actorStr + "}";
+        }
     }
     
 }
